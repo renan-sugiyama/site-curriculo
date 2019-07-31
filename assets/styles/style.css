@@ -1,0 +1,33 @@
+/* geral */
+* {
+    font-family: 'Montserrat'
+}
+
+.sessao {
+    padding: 70px 0;
+}
+
+.sessao-titulo {
+    font-size: 3rem;
+}
+
+/* about me section */
+.about-me .sessao-titulo {
+    border-width: 3px 3px 3px 0;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 100% 0, from(#45cafc), to(#303f9f)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(top,#45cafc,#303f9f) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(top,#45cafc,#303f9f) 1 100%; 
+    -o-border-image:
+      -o-linear-gradient(top,#45cafc,#303f9f) 1 100%;
+    border-image:
+      linear-gradient(to top,#45cafc,#303f9f) 1 100%;     
+}
+
+/* linguagens de programação */
+.linguagens-img {
+    font-size: 80px;
+}
