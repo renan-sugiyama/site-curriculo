@@ -29,5 +29,44 @@
 
 /* linguagens de programação */
 .linguagens-img {
+    position: relative;
     font-size: 80px;
+    height: 124px;
+    width: 124px;
+}
+
+.linguagens-img:before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 124px;
+    width: 124px;
+    background: url(../imgs/circle-colors.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+.linguagens-card-container:hover .linguagens-img::before {
+    animation: spin 1s linear infinite
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
