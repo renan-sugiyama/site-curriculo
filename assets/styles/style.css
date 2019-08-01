@@ -27,27 +27,48 @@
       linear-gradient(to top,#45cafc,#303f9f) 1 100%;     
 }
 
-/* linguagens de programação */
-.linguagens-img {
+/* linguagens de programação e frameworks e libs*/
+.conhecimentos-img {
     position: relative;
-    font-size: 80px;
-    height: 124px;
-    width: 124px;
+    font-size: 60px;
+    height: 75px;
+    width: 75px;
 }
 
-.linguagens-img:before {
+.conhecimentos-title {
+    padding: 10px 0;
+    font-size: 2rem;
+}
+
+.conhecimentos-img:before {
     position: absolute;
     content: '';
     display: block;
-    height: 124px;
-    width: 124px;
+    height: 90px;
+    width: 90px;
     background: url(../imgs/circle-colors.png) no-repeat center center;
     background-size: cover;
 }
 
 
-.linguagens-card-container:hover .linguagens-img::before {
-    animation: spin 1s linear infinite
+.conhecimentos-card-container:hover .conhecimentos-img::before {
+    animation: spin 1s linear infinite;
+}
+
+.conhecimentos-img-destaque {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)!important;
+    z-index: -1;
+    position: relative;
+    
+}
+
+.conhecimentos-img-gradiente {
+    background: 
+    linear-gradient(
+        rgba(112, 100, 120, 0.85), 
+        rgba(255, 120, 120, 0.3)
+  
+    )
 }
 
 @-ms-keyframes spin {
