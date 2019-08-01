@@ -83,6 +83,50 @@
 }
 
 
+/* contact */
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #d0dddf;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: blue;
+}
+
+.card-contato {
+    position: relative;
+    padding: 2rem 25px;
+    margin: 3rem 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)!important;
+}
+
+.card-contato-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    height: 40px;
+    line-height: 40px;
+    background-image: linear-gradient(120deg,#e0c3fc 0,#8ec5fc 100%);
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.18),0 3px 6px 0 rgba(0,0,0,.15)!important;
+}
+
+input {
+    margin: 10px 0 !important;
+}
+
+.lbl-textarea {
+    padding: 0 15px;
+}
+
 
 /* animation */
 @-ms-keyframes spin {
