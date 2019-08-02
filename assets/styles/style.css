@@ -1,14 +1,27 @@
 /* geral */
 * {
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .sessao {
     padding: 70px 0;
 }
 
 .sessao-titulo {
     font-size: 3rem;
+}
+
+/* nav */
+
+nav {
+    background-color: #fff;
+}
+
+.navbar {
+    transition: all 0.3s ease;
 }
 
 /* about me section */
