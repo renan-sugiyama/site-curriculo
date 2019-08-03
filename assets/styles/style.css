@@ -235,6 +235,25 @@ input {
     cursor: pointer;
 }
 
+/* alerts after send an email */
+.show {
+    display: block;
+}
+
+.hide-alert {
+    display: none;
+}
+
+.alert, .alert-error {
+    z-index: 9999;
+    position: fixed;
+    top: 80vh;
+    left: 50%;
+    min-width: 80%;
+    transform: translate(-50%, 0);
+    
+}
+
 /* animation */
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
