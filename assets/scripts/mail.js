@@ -1,6 +1,9 @@
 
 const sendEmail = (envio) => {
     envio.preventDefault;
+    if (!validaForm()) {
+        return
+    }
     const name = document.querySelector('#name')
     const email = document.querySelector('#email')
     const message = document.querySelector('#message')
@@ -39,3 +42,34 @@ const clearForm = () => {
     document.querySelector('#message').value = ''
 }
 
+const validaForm = () => {
+    const name = document.querySelector('#name')
+    const email = document.querySelector('#email')
+    const message = document.querySelector('#message')
+
+    if (name.value == "")                                  
+    { 
+        return false; 
+    } 
+       
+    if (email.value == "")                                   
+    { 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        return false; 
+    } 
+
+    if (message.value == "")                                  
+    { 
+        return false; 
+    } 
+    return true
+}
