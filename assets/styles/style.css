@@ -126,9 +126,13 @@ nav {
 
 .card {
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)!important;
+    transition: all .5s ease;
 }
 
-
+.card:hover {
+    transform:  translateX(0px) translateY(-15px) rotate(.8deg);
+    box-shadow: 0 9px 29px 0 rgba(0,0,0,.18),0 7px 25px 5px rgba(0,0,0,.25)!important;
+}
 
 /* contact */
 
@@ -226,7 +230,15 @@ input {
 
 .icon-contact a:hover {
     color: transparent;
+    
 }
+
+.icon-contact a:hover i{
+    background: -webkit-linear-gradient(#fff, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .icon-contact a i {
     margin: auto;

@@ -20,14 +20,22 @@ const sendEmail = (envio) => {
             document.querySelector('.alert').classList.add('hide-alert')
             document.querySelector('.alert').classList.remove('show')
         }, 4000);
+        clearForm()
     }).fail(function(err) {
         document.querySelector('.alert-error').classList.add('show')
         document.querySelector('.alert-error').classList.remove('hide-alert')
+        clearForm()
         setInterval(() => {
             document.querySelector('.alert-error').classList.add('hide-alert')
             document.querySelector('.alert-error').classList.remove('show')
         }, 4000);
     });
     
+}
+
+const clearForm = () => {
+    document.querySelector('#name').value = ''
+    document.querySelector('#email').value = ''
+    document.querySelector('#message').value = ''
 }
 
