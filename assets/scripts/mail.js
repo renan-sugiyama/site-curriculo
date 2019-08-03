@@ -27,7 +27,6 @@ const sendEmail = (envio) => {
     }).fail(function(err) {
         document.querySelector('.alert-error').classList.add('show')
         document.querySelector('.alert-error').classList.remove('hide-alert')
-        clearForm()
         setInterval(() => {
             document.querySelector('.alert-error').classList.add('hide-alert')
             document.querySelector('.alert-error').classList.remove('show')
