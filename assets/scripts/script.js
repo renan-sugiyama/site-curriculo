@@ -14,3 +14,21 @@ $('body').scrollspy({
     target: '#mainNav',
     offset: 56
   });
+
+
+$(window).scroll(function () {
+  $('.sessao-titulo').each(function () {
+
+      var tituloPos = $(this).offset().top;
+      var tituloHeight = $(this).height();
+      var topOfWindow = $(window).scrollTop();
+
+      if (tituloPos < topOfWindow + tituloHeight + 300 && tituloPos + tituloHeight > topOfWindow) {
+          $(this).addClass("titulo-background");
+
+      } 
+      // else {
+      //     $(this).removeClass("titulo-background");
+      // }
+  });
+});
