@@ -14,7 +14,7 @@ const sendEmail = (envio) => {
         message: message.value
     };
 
-    const url = 'http://curriculo.exceltri.com/mail/mail.php'
+    const url = 'https://curriculo.exceltri.com/mail/mail.php'
 
     $.post(url, dados).done(function (data) {
         document.querySelector('.alert').classList.add('show')
